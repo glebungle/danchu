@@ -2,11 +2,11 @@ import { StyleSheet, View } from 'react-native';
 
 import { AppText } from '@/components/app-text';
 
-export default function ExploreScreen() {
+export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <AppText weight="bold" size={20}>
-        Explore (TODO)
+        Home (TODO)
       </AppText>
     </View>
   );

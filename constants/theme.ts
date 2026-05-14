@@ -1,20 +1,15 @@
-/**
- * Below are the colors that are used in the app. The colors are defined in the light and dark mode.
- * There are many other ways to style your app. For example, [Nativewind](https://www.nativewind.dev/), [Tamagui](https://tamagui.dev/), [unistyles](https://reactnativeunistyles.vercel.app), etc.
- */
-
 import { Platform } from 'react-native';
 
-const tintColorLight = '#0a7ea4';
+const tintColorLight = '#9DB9EF';
 const tintColorDark = '#fff';
 
 export const Colors = {
   light: {
-    text: '#11181C',
+    text: '#4D5053',
     background: '#fff',
     tint: tintColorLight,
-    icon: '#687076',
-    tabIconDefault: '#687076',
+    icon: '#75787B',
+    tabIconDefault: '#CECECE',
     tabIconSelected: tintColorLight,
   },
   dark: {
@@ -27,25 +22,46 @@ export const Colors = {
   },
 };
 
+export const Palette = {
+  blue: '#9DB9EF',
+  pink: '#FFD6E8',
+  textBlack: '#4D5053',
+  gray: '#DDDDDD',
+  grayDark: '#75787B',
+  grayLight: '#CECECE',
+  buttonInactive: '#D9DFEA',
+  inputBg: '#EAEAEA',
+  gradientStart: '#FFD6E8',
+  gradientEnd: '#D6E4FF',
+};
+
+export const FontFamily = {
+  thin: 'Pretendard-Thin',
+  extraLight: 'Pretendard-ExtraLight',
+  light: 'Pretendard-Light',
+  regular: 'Pretendard-Regular',
+  medium: 'Pretendard-Medium',
+  semiBold: 'Pretendard-SemiBold',
+  bold: 'Pretendard-Bold',
+  extraBold: 'Pretendard-ExtraBold',
+  black: 'Pretendard-Black',
+};
+
 export const Fonts = Platform.select({
   ios: {
-    /** iOS `UIFontDescriptorSystemDesignDefault` */
-    sans: 'system-ui',
-    /** iOS `UIFontDescriptorSystemDesignSerif` */
+    sans: 'Pretendard-Regular',
     serif: 'ui-serif',
-    /** iOS `UIFontDescriptorSystemDesignRounded` */
     rounded: 'ui-rounded',
-    /** iOS `UIFontDescriptorSystemDesignMonospaced` */
     mono: 'ui-monospace',
   },
   default: {
-    sans: 'normal',
+    sans: 'Pretendard-Regular',
     serif: 'serif',
     rounded: 'normal',
     mono: 'monospace',
   },
   web: {
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+    sans: "Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
     serif: "Georgia, 'Times New Roman', serif",
     rounded: "'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif",
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
