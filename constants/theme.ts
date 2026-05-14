@@ -33,6 +33,7 @@ export const Palette = {
   inputBg: '#EAEAEA',
   gradientStart: '#FFD6E8',
   gradientEnd: '#D6E4FF',
+  signupBg: '#F8FAFF',
 };
 
 export const FontFamily = {

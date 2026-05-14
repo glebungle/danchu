@@ -32,7 +32,7 @@ export default function LoginScreen() {
               contentFit="contain"
             />
           </Pressable>
-          <Pressable onPress={() => router.push("/onboarding")} hitSlop={12}>
+          <Pressable onPress={() => router.push("/signup/nickname")} hitSlop={12}>
             <AppText
               weight="medium"
               size={13}
